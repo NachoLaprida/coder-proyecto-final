@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK ICON LOGO-->
+    <link rel="shortcut icon" href="../imagenes/espadas.png">
+    <!--LINK ICON SOCIAL NETWORK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--LINK ANIMACIONES-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+<!--------- HEADER SECTION -------------------------------------------------------------------------------------------------->
+    <header>
+<!------ NAVIGATION BAR SECTION ------------------------------------------------------------------------------------------------->
+       
+    <nav>
+        <div class="logo">
+            <a class= "nav-logo" href="../index.html">
+            <img width="50" src="../imagenes/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="civilizaciones.html">Civilizaciones</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galería</a>
+                </li>
+                <li>
+                    <a href="proplayers.html">Pro Players</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        <div>        
+    </nav>
+    </header>
+<!----------- MAIN SECTION --------------------------------------------------------------------------------------->
+    <main>    
+        <section>
+            <form>
+                <h1>Dejanos tu consulta</h1>
+                <fieldset>
+                    <div class="area">
+                        <!-- <label for="nombre">Nombre:</label> -->
+                        <input placeholder="Nombre" name="nombre" type="text" id="nombre" required>
+                        <!-- <label for="apellido">Apellido:</label> -->
+                    </div>
+                    <div class="area">
+                        <input placeholder="Apellido" type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <div>
+                            <div class="hombre">Hombre</div>
+                                <input type="radio" name="sexo" value="hombre" required>
+                            <div class="mujer">Mujer</div>
+                                <input type="radio" name="sexo" value="mujer" required>
+                        </div>
+                    </div>    
+                    <div class="area">  
+                        <!-- <label for="telefono">Telefono:</label> -->
+                        <input placeholder="Telefono" type="number" name="telefono" id="telefono" required>
+                    </div>
+                    <div class="area">  
+                        <!-- <label for="email">E-mail:</label> -->
+                        <input placeholder="E-mail" type="email" name="email" id="email" required>
+                    </div>    
+                    <div class="text-area">
+                    <!-- <h2 class="contact-subtitle">Mensaje</h2> -->    
+                        <textarea placeholder="Mensaje" name="Mensaje" id="Mensaje" cols="30" rows="10" required></textarea>
+                    </div>
+                        <input class="button" type="submit" value="Enviar">
+                        <input class="button" type="reset">
+                </fieldset>
+            </form>
+        </section>
+    </main>    
+<!----------- FOOTER SECTION ------------------------------------------------------------------------------------->    
+    <footer>
+        <div class="link-arriba">
+            <a href="../index.html">Volver al inicio</a>
+        </div>    
+        <div class="social-network">
+            <p>Redes</p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="developer">
+            <p>Developed by 
+                <a href="#"> Ignacio Laprida </a> 
+            </p>
+        </div> 
+    </footer>
+</body>
+</html>

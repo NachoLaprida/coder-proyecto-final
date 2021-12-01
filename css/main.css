@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;   
+}
+:root{
+    --color-bordo:#C36839;
+    --color-turquesa:#7EB5A6;
+    --color-beige:#E8D0B3;
+    --color-dorado:#FFCE45;
+}
+/*------- BDOY SECTION ----------------------------------------------------------------------*/
+body{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+}
+/*------- HEADER SECTION --------------------------------------------------------------------*/
+header{
+    position: sticky;
+    top: 0;
+
+    grid-area: header;
+}
+/*------- NAVIGATION SECTION ----------------------------------------------------------------*/
+
+nav{
+    background-color: var(--color-bordo);
+    
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+}
+.logo{
+    padding: 10px;
+}
+.menu ul li {
+    display: block;
+    padding: 10px;
+}
+.menu ul li a{
+    color: #FFCE45;
+    font-size: 20px;  
+    text-decoration: none;
+    border: solid #FFCE45;
+    padding: 3px;
+}
+/*------- MAIN SECTION -----------------------------------------------------------------*/
+main{
+    grid-area: main;
+}
+main{
+    background-color: #E8D0B3;
+}
+
+
+/*------- INDEX SECTION ----------------------------------------------------------------*/
+
+.foto{
+    /* https://www.pexels.com/es-es/
+    */
+    border: solid var(--color-bordo);
+    border-radius: 30px;
+    text-align: center;
+    padding: 8px;   
+}
+.foto p{
+    font-size: .8rem;
+}
+.principal h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.minimo h2{
+    font-size: 1rem;
+}    
+.recomendado h2{
+    font-size: 1rem;
+}
+.minimo, .recomendado{
+    text-align: center;
+    border: solid var(--color-bordo);
+    border-radius: 30px;
+}
+.minimo p{
+    font-size: 0.8em;
+}
+.recomendado p{
+    font-size: 0.8em;
+}
+.titulo{
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+}
+.videos{
+    text-align: center;
+    
+}
+.trailer-juego, .trailer-dlc{
+    display: inline-block;
+}
+
+/*------- CIVILIZACIONES SECTION -------------------------------------------------------*/
+
+.contenedor-civi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.civilizacion{
+    text-align: center;
+    border: solid var(--color-bordo);
+    
+}
+.civi-t, .civi-img{
+    display: inline;
+}
+.civi-img{
+    height: 30px;
+    width: 30px;
+}
+.contenedor-civi .civilizacion h2{
+    font-size: 18px;
+}
+.contenedor-civi .civilizacion p{
+    font-size: 12px;
+}
+.civilizacion img{
+    transition: all 1s ease;
+}
+.civilizacion img:hover{
+    transform: rotate(360deg);
+}
+/*------- GALERIA SECTION --------------------------------------------------------------*/
+.contenedor-img{
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 160px;
+    justify-content: center;
+    
+}
+.contenedor-img .div-imagen img{
+    height: 100%;
+    width: 100%;   
+}
+/*------- PRO PLAYERS SECTION -------------------------------------------------------------*/
+
+    .players{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    .players .pic-player img{
+        height: 200px;
+        width: 175px;   
+    }
+    .pic-player{
+        text-align: center;
+    }
+    .players .info p{
+        font-size: 14px;
+        text-align: center;
+        padding: 15px;    
+    }
+    .players .info h2{
+        text-align: center;
+    }
+
+/*------- CONTACTO SECTION -------------------------------------------------------------*/
+
+form {
+    text-align: center;
+}
+form fieldset{
+    background-color: var(--color-turquesa);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: none;
+}
+.area input{
+    border-radius: 45px;
+    font-weight: 10px;
+    height: 30px;
+    width: 200px;
+    border: none;
+    margin: 5px;
+    padding-left: 1rem;
+    
+}
+.button{
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+.hombre{
+    display: inline;
+}
+.mujer{
+    display: inline;
+}
+
+
+/*------- FOOTER SECTION -----------------------------------------------------------------*/
+
+footer{
+    grid-area: footer;
+    
+    background-color: #C36839;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+.link-arriba, .social-network, .developer{
+    display: block;    
+}
+.link-arriba a{
+    color: #86340A;
+    text-decoration: none;
+}
+.link-arriba{
+    background-color: #FFCE45;
+    margin: 10px;
+    text-align: center;
+    padding: 1px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.social-network{
+    display: block;
+    color: #86340A;
+    font-size: 20px;
+    text-align: center;
+}
+.developer{
+    display: inline-block;
+    margin: 20px;
+    color: #86340A;
+
+}
+.developer a{
+    color: var(--color-dorado);
+    text-decoration: none;
+}
+.link-arriba{
+    transition: all 1s ease;
+}
+.link-arriba:hover{
+    transform: scale(1.1);
+}
+
+/*------------- MEDIA QUERIES -------------------*/
+
+@media screen and (min-width:768px) {
+    /*------- BODY SECTION ----------------------------------------------------------------------*/
+    body{
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "main main main"
+            "footer footer footer"
+            ;
+    }
+    /*------- NAVIGATION SECTION ----------------------------------------------------------------*/
+    nav{
+        background-color: var(--color-bordo);
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .logo{
+        margin-left: 30px;
+        /* transform: rotate(50deg);
+        transition: all 2s ease;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 0s; */
+        animation-name: camus;
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        }
+        @keyframes camus {
+        0%{
+            transform: translate(10px, 0);
+        }
+        50%{
+            transform: translate(700px, 0);
+        }
+        100%{
+            transform: translate(0px, 0) rotate(360deg);
+        }
+/*     }
+    .logo:hover{
+        transform: rotate(360deg);
+    } */
+}
+    .logo, img{
+        height: 50px;
+        width: 50px;
+    }
+    .logo .menu{
+        padding: 5px;
+    }
+    .menu ul li {
+        display: inline-block;
+        padding: 15px;
+    }
+    .menu ul li:hover{
+        background-color: var(--color-dorado);
+    }
+    .menu ul li a{
+        color: #FFCE45;
+        font-size: 20px;  
+        text-decoration: none;
+        border: solid #FFCE45;
+        padding: 5px;
+    }
+    .menu ul li a:hover{
+        color: var(--color-bordo);
+    }
+    /*------- INDEX SECTION ----------------------------------------------------------------*/
+    .foto{
+        /* https://www.pexels.com/es-es/
+        */
+        border: solid var(--color-bordo);
+        border-radius: 30px;
+        text-align: center;
+        padding: 8px;   
+    }
+    .foto p{
+        font-size: 1rem;
+        }
+    .principal h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .minimo h2{
+        font-size: 1.5rem;
+        }
+    .requisitos, .minimo, .recomendado{
+        text-align: center;
+    }
+    .minimo, .recomendado{
+        display: inline-block;
+        border: solid var(--color-bordo);
+        border-radius: 30px;
+    }
+    .minimo p{
+        font-size: 0.8em;
+    }
+    .recomendado p{
+        font-size: 0.8em;
+    }
+    .titulo{
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px;
+        }
+    .videos{
+        text-align: center;
+        
+    }
+    .trailer-juego, .trailer-dlc{
+        display: inline-block;
+    }
+    
+    /* ------ CIVILIZACIONES SECTION --------- */
+    .contenedor-civi{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .civilizacion{
+        text-align: center;
+        border: solid var(--color-bordo);
+    }
+    .civi-t, .civi-img{
+        display: inline;
+    }
+    .civi-img{
+        height: 30px;
+        width: 30px;
+    }
+    .contenedor-civi .civilizacion h2{
+        font-size: 25px;
+    }
+    .contenedor-civi .civilizacion p{
+        font-size: 15px;
+    }
+    /*------- GALERIA SECTION --------------------------------------------------------------*/
+    .contenedor-img{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 200px 200px 200px;
+        justify-content: center;
+        
+    }
+    .contenedor-img .div-imagen img{
+        height: 100%;
+        width: 100%;
+        border: solid var(--color-bordo);    
+    }
+    /*------- PRO PLAYERS SECTION -------------------------------------------------------------*/
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .players .pic-player img{
+        height: 250px;
+        width: 220px;   
+    }
+    .pic-player{
+        text-align: center;
+    }
+    .players .info p{
+        font-size: 14px;
+        text-align: center;
+        padding: 30px;
+    }
+    .players .info h2{
+        text-align: center;
+    }
+        /*------- CONTACTO SECTION -------------------------------------------------------------*/
+    form {
+        text-align: center;
+    }
+    form fieldset{
+        background-color: var(--color-turquesa);
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 300px;
+        font-weight: none;
+    }
+    .area input{
+        border-radius: 45px;
+        font-weight: 10px;
+        height: 30px;
+        width: 200px;
+        border: none;
+        margin: 5px;
+        padding-left: 1rem;
+        
+    }
+    .button{
+        width: 100px;
+        height: 35px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+    .hombre{
+        display: inline;
+    }
+    .mujer{
+        display: inline;
+    }
+    /*------- FOOTER SECTION -----------------------------------------------------------------*/
+    footer{
+        grid-area: footer;
+        
+        background-color: #C36839;
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .link-arriba, .social-network, .developer{
+        display: inline-block;    
+    }
+    .link-arriba a{
+        color: #86340A;
+        text-decoration: none;
+    }
+    .link-arriba{
+        background-color: #FFCE45;
+        margin: 10px;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    .social-network{
+        display: block;
+        color: #86340A;
+        font-size: 20px;
+        text-align: center;
+    }
+    .developer{
+        display: inline-block;
+        margin: 20px;
+    }
+    .developer a{
+        color: #FFCE45;
+        text-decoration: none;
+    }
+}
