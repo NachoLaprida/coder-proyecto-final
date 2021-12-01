@@ -418,7 +418,19 @@ footer{
         border: solid var(--color-bordo);    
     }
     /*------- PRO PLAYERS SECTION -------------------------------------------------------------*/
-    .players{
+/*     .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    } */
+    .pp1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .pp2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
