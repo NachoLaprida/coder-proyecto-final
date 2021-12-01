@@ -152,11 +152,15 @@ main{
 }
 /*------- PRO PLAYERS SECTION -------------------------------------------------------------*/
 
-    .players{
+/*     .players{
         display: grid;
         grid-template-columns: auto;
         justify-items: center;
         align-items: center;
+    } */
+    .pp2{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .players .pic-player img{
         height: 200px;
